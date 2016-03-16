@@ -10,7 +10,163 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.aukcia.aukcia.RegisterActivity"
-    tools:showIn="@layout/activity_register">
+    tools:showIn="@layout/activity_register"
+    android:background="#090909"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:backgroundTintMode="add">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/topBar"
+            android:weightSum="1">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton"
+                android:src="@android:drawable/ic_menu_revert"
+                android:background="#00000000"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="277dp"
+                android:layout_height="63dp"
+                android:text="Registration"
+                android:id="@+id/textView"
+                android:textColor="#fafafb"
+                android:capitalize="words"
+                android:textSize="@dimen/abc_text_size_display_2_material"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textFieldHolder">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/etUsername"
+                android:hint="Username"
+                android:textColor="#0b0909"
+                android:textColorHint="#d72929"
+                android:textAlignment="gravity"
+                android:textIsSelectable="true"
+                android:editable="true"
+                android:clickable="true"
+                android:backgroundTint="#f9f9fb" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/etEmail"
+                android:hint="Email"
+                android:textColor="#0b0909"
+                android:textColorHint="#d72929"
+                android:textAlignment="gravity"
+                android:backgroundTint="#fbf8f8" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/etPassword"
+                android:hint="Password"
+                android:textColorHint="#d72929"
+                android:textAlignment="gravity"
+                android:password="true"
+                android:backgroundTint="#ffffff" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/etPasswordAgain"
+                android:hint="Password again"
+                android:textColor="#0b0909"
+                android:textColorHint="#d72929"
+                android:textAlignment="gravity"
+                android:password="true"
+                android:backgroundTint="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkboxHolder"
+            android:backgroundTint="#ffffff">
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Remember Me"
+                android:id="@+id/cbRememberMe"
+                android:textColor="#f8f2f2"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New RadioButton"
+                android:id="@+id/radioButton"
+                android:textColor="#d72929"
+                android:buttonTint="#ffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New RadioButton"
+                android:id="@+id/radioButton2"
+                android:textColor="#d72929"
+                android:buttonTint="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginButtonHolder">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerButtonHolder">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign-up"
+                android:id="@+id/bRegister"
+                android:clickable="true"
+                android:background="#00000000"
+                android:textColorHighlight="#5954e7"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </RelativeLayout>
