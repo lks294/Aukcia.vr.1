@@ -46,6 +46,15 @@
         </LinearLayout>
 
         <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="39dp"
+            android:id="@+id/linearLayout"
+            android:weightSum="1" >
+
+        </LinearLayout>
+
+        <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -115,17 +124,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/registerButtonHolder">
 
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Sign-up"
-                android:id="@+id/bRegister"
-                android:clickable="true"
-                android:background="#00000000"
-                android:textColorHighlight="#5954e7"
-                android:textColor="#ffffff" />
         </LinearLayout>
 
 
     </LinearLayout>
+
 </RelativeLayout>

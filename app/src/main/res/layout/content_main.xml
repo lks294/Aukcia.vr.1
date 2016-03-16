@@ -10,10 +10,73 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.aukcia.aukcia.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    android:background="#0b0909">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/topBar"
+            android:weightSum="1"
+            android:layout_weight="0.96">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="63dp"
+                android:text="Auction"
+                android:id="@+id/textView"
+                android:textColor="#fafafb"
+                android:capitalize="words"
+                android:textSize="@dimen/abc_text_size_display_2_material"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginButtonHolder"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/bLogin"
+                android:clickable="true"
+                android:background="#00000000"
+                android:textColorHighlight="#5954e7"
+                android:textColor="#ffffff"
+                android:layout_weight="0.51" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign-up"
+                android:id="@+id/bRegister"
+                android:clickable="true"
+                android:background="#00000000"
+                android:textColorHighlight="#5954e7"
+                android:textColor="#ffffff"
+                android:layout_weight="0.49" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerButtonHolder">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 </RelativeLayout>
